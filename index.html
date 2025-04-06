@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Head me ye Google Font add karo -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<!-- Head me ye icon library add karo -->
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()">Search</button>
+    <button onclick="getWeatherByLocation()">📍 Use My Location</button>
+
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
