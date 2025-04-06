@@ -61,7 +61,7 @@ function getWeather() {
     })
     .catch(err => {
       resultDiv.innerHTML = 'City not found. Please try again.';
-    });
+    );
 }
 
 function getWeatherByLocation() {
