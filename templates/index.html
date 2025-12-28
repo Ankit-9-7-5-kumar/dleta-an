@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div class="app-card">
+    <h2>Weather</h2>
+
+    <div class="search-box">
+      <input id="cityInput" placeholder="Enter city">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <button class="location-btn" onclick="getWeatherByLocation()">
+      📍 Use My Location
+    </button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
