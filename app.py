@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, jsonify
 import requests
 from datetime import datetime
+import os
 app = Flask(__name__)
 
-API_KEY = "55ad90af73c7b309b655660b4c03de71"
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 @app.route("/")
 def home():
